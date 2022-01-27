@@ -1,0 +1,29 @@
+<!--Juanjo Carrasco Rodríguez-->
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Subir imágenes al servidor</title>
+  </head>
+  <body>
+    <h1>Subir imágenes al servidor</h1>
+    <p>Solo son válidos los archivos con extensión: .jpg, .jpeg, .png o .pdf</p>
+    <p>Tamaño máximo de la imagen: 4096</p>
+    <form  action="guardarimg.php" enctype="multipart/form-data" method="post">
+      <input type="file" name="imagen" accept="image/*,.pdf" size="4096">
+      <br />
+      <br />
+      <input type="submit" name="enviar" value="Subir imagen">
+    </form>
+    <br />
+    <br />
+    <a href="galeria.php">Galería de imágenes</a>
+    <br />
+    <br />
+    <a href="lista.php">Lista de archivos</a>
+    <br />
+    <br />
+    <a href="listapdf.php">Lista de pdf</a>
+  </body>
+</html>
